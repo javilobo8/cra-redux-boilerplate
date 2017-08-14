@@ -15,6 +15,11 @@ export const incrementAsync = () => (dispatch, getState) => {
   }, count * 500);
 };
 
+export const actions = {
+  increment,
+  incrementAsync,
+};
+
 const INITIAL_STATE = Immutable.fromJS({
   count: 0,
 });
